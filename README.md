@@ -1,6 +1,6 @@
 # Arduino-MIDI-to-FF14-adapter
 これは、MIDIキーボードでPS4のファイナルファンタジー14の楽器演奏をするためのアダプタプログラムです。  
-> 新型を開発しました。[こちら](https://github.com/Lybfip/Conductor_10)を参照してください。  
+新型を開発しました。[こちら](https://github.com/Lybfip/Conductor_10)を参照してください。  
 This is an adapter program for playing instruments of FINAL FANTASY XIV on PS4 with a MIDI keyboard.
 
 # 必要なハードウェア（Hardware Requirements）

@@ -1,21 +1,22 @@
 # Arduino-MIDI-to-FF14-adapter
-����́AMIDI�L�[�{�[�h��PS4�̃t�@�C�i���t�@���^�W�[14�̊y�퉉�t�����邽�߂̃A�_�v�^�v���O�����ł��B
+これは、MIDIキーボードでPS4のファイナルファンタジー14の楽器演奏をするためのアダプタプログラムです。
+新型を開発しました。[こちら](https://github.com/Lybfip/Conductor_10)を参照してください。
 This is an adapter program for playing instruments of FINAL FANTASY XIV on PS4 with a MIDI keyboard.
 
-# �K�v�ȃn�[�h�E�F�A�iHardware Requirements�j
+# 必要なハードウェア（Hardware Requirements）
 1. Arduino Leonardo (ATmega32u4)
 2. Arduino USB Host Shield
 
-# �g����
-1. USB Host Shield �̃s�����AArduino Leonardo �̃\�P�b�g�ɍ�������ł��������B
-2. ���̃T�C�g���� Arduino IDE ���_�E�����[�h���� PC �ɃC���X�g�[�����Ă��������B
+# 使い方
+1. USB Host Shield のピンを、Arduino Leonardo のソケットに差し込んでください。
+2. 次のサイトから Arduino IDE をダウンロードして PC にインストールしてください。
    https://www.arduino.cc/en/Main/Software
-3. ���̃T�C�g�� How to include the library �� Manual Installation ���Q�l�ɂ��āAUSB Host Library Rev.2.0 �� Arduino IDE �ɃC���X�g�[�����Ă��������B
+3. 次のサイトの How to include the library の Manual Installation を参考にして、USB Host Library Rev.2.0 を Arduino IDE にインストールしてください。
    https://github.com/felis/USB_Host_Shield_2.0
-4. ���̃T�C�g�� USB_MIDI_converter.ino ���_�E�����[�h���AArduino IDE �ŁAUSB_MIDI_converter.ino ���J���Ă��������B
-5. Leonardo �� USB micro-B �R�l�N�^�� PC �� USB �P�[�u���Őڑ����Ă��������B
-6. Arduino IDE �̃��j���[�� [�c�[��] -> [�{�[�h] �� [Arduino Leonardo] ��I�����Ă��������B���l�� [�c�[��] -> [�V���A���|�[�g] �ŁA[COM*(Arduino Leonardo)] ��I�����Ă��������i*�͐����j�B
-7. Arduino IDE �̃c�[���o�[�� (v) �A�C�R�����N���b�N���Ă��������B���̕��Ɂu�X�P�b�`���R���p�C�����Ă��܂��c�v�ƕ\������A���΂炭�҂Ɓu�R���p�C�����������܂����B�v�ƕ\������܂��B
-8. Arduino IDE �̃c�[���o�[�� (->) �A�C�R�����N���b�N���Ă��������B�R���p�C���̌�A�u�}�C�R���{�[�h�ɏ�������ł��܂��c�v�u�{�[�h�ւ̏������݂��������܂����B�v�ƕ\�������Ί����ł��B
-9. Arduino Leonardo �� PC ����O���āAUSB A �̕��� MIDI �L�[�{�[�h��ڑ����AUSB micor-B �̕��� PS4 �ɐڑ����āAFF14 �̋�V���l�̊y�퉉�t�̃L�[���蓖�Ă̐ݒ�ŁAQWERTY �L�[�{�[�h�̑���� MIDI �L�[�{�[�h�𑀍삵�Đݒ肵�Ă��������B
+4. このサイトの USB_MIDI_converter.ino をダウンロードし、Arduino IDE で、USB_MIDI_converter.ino を開いてください。
+5. Leonardo の USB micro-B コネクタと PC を USB ケーブルで接続してください。
+6. Arduino IDE のメニューの [ツール] -> [ボード] で [Arduino Leonardo] を選択してください。同様に [ツール] -> [シリアルポート] で、[COM*(Arduino Leonardo)] を選択してください（*は数字）。
+7. Arduino IDE のツールバーの (v) アイコンをクリックしてください。下の方に「スケッチをコンパイルしています…」と表示され、しばらく待つと「コンパイルが完了しました。」と表示されます。
+8. Arduino IDE のツールバーの (->) アイコンをクリックしてください。コンパイルの後、「マイコンボードに書き込んでいます…」「ボードへの書き込みが完了しました。」と表示されれば完了です。
+9. Arduino Leonardo を PC から外して、USB A の方に MIDI キーボードを接続し、USB micor-B の方を PS4 に接続して、FF14 の吟遊詩人の楽器演奏のキー割り当ての設定で、QWERTY キーボードの代わりに MIDI キーボードを操作して設定してください。
 
